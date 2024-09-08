@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const monthlyRent = 500;
+    const yearlyRent = monthlyRent * 12;
+    console.log(yearlyRent);
+
+
+    const myName = "Soblazo";
+    console.log(myName);
+
+
+    const firstName = "Farel";
+    const lastName = "Ganlaky";
+    const sentence = "Hello " + firstName + " " + lastName + "! How are you?";
+    const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you?`;
+    console.log(sentence);
+    console.log(sentenceWithTemplate);
+
+
+    let isFarelCool = true;
+    console.log(isFarelCool);
+
+
+    // control flow
+    const isSkyBlue = true;
+    if (isSkyBlue) {
+        console.log("The Sky is Blue");
+    } else {
+        console.log ("The Sky is not blue");
+    }
+
+
+    const friendsAtYourParty = 10;
+    if (friendsAtYourParty === 0) {
+        console.log("Cool, now I have a lot of nachos to myself.");
+    } else if (friendsAtYourParty <= 4) {
+        console.log("Perfect amount to play some Mario Kart.");
+    } else {
+        console.log("Woooo turn on the dance music.");
+    }
+
+
+    // loops
+    let friendsAtParty = 0;
+    while (friendsAtParty < 10) {
+        console.log("another friend at your party");
+        friendsAtParty += 1;
+    }
+    console.log(friendsAtParty);
+
+
+    for (let i = 0; i < 10; i++) {
+        friendsAtParty++;
+    }
+    console.log(friendsAtParty);
+
+
+    let character = "f";
+    let timesToRepeat = 5;
+    for (let i = 0; i < timesToRepeat; i++) {
+        character += "f";
+    }
+    console.log(character);
+
+    // functions
+    function addTwo(number) {
+        return number + 2;
+    }
+    const finalAnswer = addTwo(5);
+    console.log(finalAnswer);
+
+    function greet(firstName, lastName, honorific, greeting) {
+        return `${greeting} ${honorific} ${lastName}! I'm extremely pleased you could join us ${firstName}! I hope you enjoy your stay, ${honorific} ${lastName}.`
+    }
+    console.log(greet("Farel", "Ganlaky", "Sensei", "My respect"));
+
+    const meow = function () {
+        console.log("meeeeeooww");
+    }
+    console.log(meow());
+
+    const chirp = () => {
+        console.log("chirp chirp");
+    }
+    console.log(chirp());
+</script>
+</html>

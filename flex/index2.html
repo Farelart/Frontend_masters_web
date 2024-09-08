@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box-1 {
+            color: white;
+            background-color: blue;
+            height: 150px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        .box-2 {
+            color: white;
+            background-color: red;
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        .box-3 {
+            color: white;
+            background-color: green;
+            height: 200px;
+            width: 100px;
+            border: 1px solid black
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+            border: 1px solid black;
+            justify-content: center;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container reverse">
+        <section class="box-1">1</section>
+        <section class="box-2">2</section>
+        <section class="box-3">3</section>
+    </section>
+</body>
+</html>

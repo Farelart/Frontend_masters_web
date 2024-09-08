@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.box-1 {
+    color: white;
+    background-color: blue;
+    height: 150px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.box-2 {
+    color: white;
+    background-color: red;
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.box-3 {
+    color: white;
+    background-color: green;
+    height: 200px;
+    width: 100px;
+    border: 1px solid black
+}
+
+.floated section{
+    float: left;
+}
+

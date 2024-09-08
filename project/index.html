@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+            font-size: 2rem;
+        }
+        
+        nav {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            margin-bottom: 0;
+            padding-top: 0.8rem;
+            padding-bottom: 1rem;
+            border: 1px solid black;
+            border-bottom: none;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            border: 1px solid black;
+        }
+
+
+        .section-1 {
+            grid-area: section-1;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .section-2 {
+            grid-area: section-2;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .section-3 {
+            grid-area: section-3;
+            border-bottom: 1px solid black;
+        }
+
+        .section-4 {
+            grid-area: section-4;
+            border-right: 1px solid black;
+        }
+
+        .section-5 {
+            grid-area: section-5;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "section-1 section-2 section-3"
+                "section-4 section-5 section-5";
+        }
+
+        img {
+            width: 50%;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>The News Times</header>
+    <nav>
+        <a href="">Politics</a>
+        <a href="">Technology</a>
+        <a href="">Local</a>
+        <a href="">Opinion</a>
+        <a href="">Sports</a>
+    </nav>
+
+    <main>
+        <section class="section-1">
+            <h2>Students Learns HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, in, commodi sapiente recusandae dicta accusamus necessitatibus reiciendis, perferendis eveniet molestias hic vero dolorum! Quidem totam quas recusandae consequatur cupiditate delectus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque provident harum nesciunt similique! Culpa beatae dolorum odio quo aliquam sed dolore, velit voluptatem. Et recusandae odit magnam necessitatibus modi placeat!</p>
+        </section>
+
+        <section class="section-2">
+            <h2>BREAKING: Luna is Adorable</h2>
+            <img src="http://pets-images.dev-apis.com/pets/dog25.jpg" alt="a pet">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam veritatis, tempore animi maiores provident molestias maxime numquam</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit inventore non ipsam reiciendis delectus minus beatae, et, earum qui eius</p>
+        </section>
+
+        <section class="section-3">
+            <h2>CSS Is Apparently a Thing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatum deleniti iste autem delectus facere atque, recusandae enim quae blanditiis veniam, nostrum amet aperiam. Aspernatur praesentium commodi iure quidem beatae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis maiores numquam quisquam laborum fuga ipsum id vitae sed temporibus officia cum rem dolor consectetur natus aut ab, quibusdam harum!</p>
+        </section>
+
+        <section class="section-4">
+            <h2>Between the Angle Brackets: The Brian Holt Scandal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio a labore sed omnis aut voluptatem saepe exercitationem beatae alias id distinctio recusandae unde illo esse, dignissimos mollitia commodi quod.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, eaque ipsa velit impedit iusto nam optio fugit doloribus recusandae distinctio. Totam molestias, ea nobis ratione aliquid error eum commodi maiores!</p>
+        </section>
+
+        <section class="section-5">
+            <h2>Scientist Invents New Miracle Drink: Coffee</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam soluta similique nesciunt nisi ducimus officia incidunt corporis, enim unde recusandae quia libero magnam laudantium sed dignissimos ipsam quisquam dicta illo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur ut similique porro aut dolorem minima necessitatibus voluptatum aliquid molestiae saepe aspernatur sint aliquam, eius sed id adipisci, enim cumque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo rerum odio veritatis unde tenetur ad sint libero ipsam nisi. Culpa dolore explicabo quae, modi non sint minima unde sapiente!</p>
+        </section>
+    </main>
+</body>
+</html>
