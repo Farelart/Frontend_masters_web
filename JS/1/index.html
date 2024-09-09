@@ -93,5 +93,114 @@
         console.log("chirp chirp");
     }
     console.log(chirp());
+
+
+    // Builtins
+    const sentencew = "This IS wEIrd CasINg";
+    const lowerCaseSentence = sentencew.toLowerCase()
+    console.log(lowerCaseSentence);
+
+    function sayHi () {
+        const string = "hi my name is Farel";
+        console.log(string.substring(5,8));
+    }
+    sayHi();
+
+    const number = 5.3;
+    const roundNumber = Math.round(number);
+    console.log(roundNumber);
+
+    // Objects
+    const person = {
+        name: "Farel GANLAKY",
+        city: "Meknès",
+        state: "WA",
+        wantsTaascosRightNow: true,
+        numberOfTacosWanted: 100,
+    }
+    console.log(person);
+    console.log(person.name);
+    console.log(person["city"]);
+
+    const person1 = {
+        name: "Angie",
+        ageRange: "25-35"
+    };
+
+    const person2 = {
+        name: "Francesca",
+        ageRange: "65-75"
+    };
+
+    function suggestMusic(person) {
+        if (person.ageRange === "25-35") {
+            console.log("I think you would like Daft Punk");
+        } else if (person.ageRange === "65-75") {
+            console.log("You're obviously going to like Johnny Cash");
+        } else {
+            console.log("Uh, maybe try David Bowie? Everyone like David Bowie, right?");
+        }
+    }
+
+    suggestMusic(person1);
+    suggestMusic(person2);
+
+    const dog = {
+        name: "Luna",
+        speak() {
+            console.log("woof, woof");
+        },
+        speak_again: function () {
+            console.log("woof, woof");
+        }
+    };
+    dog.speak();
+    dog.speak_again();
+
+    // Arrays
+    const daysOfTheWeek = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+    ];
+
+    console.log(daysOfTheWeek);
+    console.log(daysOfTheWeek[0]);
+    console.log(daysOfTheWeek[1]);
+    console.log(daysOfTheWeek[6]);
+
+    const primeNumbers = [1, 2, 3, 5, 7, 11, 13];
+    console.log(primeNumbers.length);
+    console.log(primeNumbers.join("|"));
+
+    daysOfTheWeek.push("No more days");
+    primeNumbers.push(17);
+    console.log(daysOfTheWeek);
+    console.log(primeNumbers);
+    daysOfTheWeek.pop();
+    console.log(daysOfTheWeek);
+
+    // Iterating through an Array
+    const cities = [
+        "Seattle",
+        "San Francisco",
+        "Salt Lake City",
+        "Amsterdam",
+        "Hong Kong",
+    ]
+
+    for(let i=0; i<cities.length; i++) {
+        console.log(i, cities[i]);
+    }
+
+    let i = 0;
+    cities.forEach(function (city) {
+        console.log(i, city);
+        i++;
+    });
 </script>
 </html>
