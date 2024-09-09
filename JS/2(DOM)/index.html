@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .redSquare {
+            background-color: crimson;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="redSquare"></div>
+
+    <ul>
+        <li class="jsTarget">Unchanged</li>
+        <li class="jsTarget">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="jsTarget">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="jsTarget">Unchanged</li>
+    </ul>
+
+    <button class="eventButton">Click me!</button>
+
+    <br>
+    <br>
+
+    <input type="text" placeholder="type into me!" class="input-to-copy">
+    <p class="p-to-copy">Nothing has happened yet</p>
+
+    <br>
+    <br>
+
+    <input type="text" placeholder="type a color here" class="color">
+
+    <br>
+    <br>
+
+    <div class="button-container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+</body>
+<script>
+    // first example
+    const redSquare = document.querySelector(".redSquare");
+    redSquare.style.backgroundColor = "limegreen";
+    redSquare.style.width = "400px";
+    console.log(redSquare.classList);
+
+
+    // second example
+    const jsTarget = document.querySelectorAll(".jsTarget");
+    console.log(jsTarget);
+    for(let i = 0; i < jsTarget.length; i++) {
+        const currentElement = jsTarget[i];
+        currentElement.innerText = "Modified by JS";
+    }
+
+
+    // third example
+    const button = document.querySelector(".eventButton");
+    button.addEventListener("click", () => {
+        redSquare.style.backgroundColor = "red";
+        // alert("Hey there");
+    })
+
+
+    // fourth example
+    const input = document.querySelector(".input-to-copy");
+    const paragraph = document.querySelector(".p-to-copy");
+    input.addEventListener("keyup", () => {
+        paragraph.innerText = input.value;
+    });
+
+
+    // fifth example
+    const inputColor = document.querySelector(".color");
+    inputColor.addEventListener("change", () => {
+        redSquare.style.backgroundColor = inputColor.value;
+    })
+
+
+    // sixth example
+    const buttonContainer = document.querySelector(".button-container");
+    buttonContainer.addEventListener("click", (event) => {
+        event.target.style.backgroundColor = "red";
+    })
+</script>
+</html>
