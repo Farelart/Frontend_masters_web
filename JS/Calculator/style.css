@@ -1,0 +1,68 @@
+:root {
+    --black : #000000;
+    --gray: #dedee0;
+    --orange: #e5934d;
+    --white: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    width: 15%;
+    margin: 15rem auto;
+}
+
+div {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3rem;
+}
+
+.firstLine, .secondLine, .thirdLine, .fourthLine, .fifthLine {
+    display: flex;
+}
+
+.button {
+    background-color: var(--gray);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.operator {
+    background-color: var(--orange);
+}
+
