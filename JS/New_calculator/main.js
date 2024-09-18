@@ -44,8 +44,8 @@ numbers.forEach(number => {
         displayedValue += number.innerText;
         display.innerText = displayedValue;
         currentNumber += number.innerText;
-    })
-})
+    });
+});
 
 function calculate (numberArray, operatorArray) {
     result = parseFloat(numberArray[0]);
