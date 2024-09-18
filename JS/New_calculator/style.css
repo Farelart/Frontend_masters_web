@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --outfit: "Outfit";
+    --orange: #e5934d;
+    --gray: #dedee0;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: var(--outfit);
+}
+
+.calculator {
+    width: 20%;
+    margin: 20rem auto;
+}
+
+.calculator .display {
+    background-color: var(--black);
+    color: var(--white);
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calculator .row {
+    display: flex;
+}
+
+button {
+    width: 100%;
+    /* aspect-ratio: 1; */
+    height: 3rem;
+    border: 1px solid var(--black);
+    background-color: var(--gray);
+}
+
+.calculator .row .operator {
+    background-color: var(--orange);
+    color: var(--white);
+}
